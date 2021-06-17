@@ -1,0 +1,93 @@
+:root{
+    --textotitulo:#46484C;
+    --textopromocional:#8b8b8bcc;
+    --textoboton:#eee;
+    --fondopagina:#eee;
+    --fondoboton:#025157;
+    --blanco:#fff99;
+}
+
+body{
+    background-color: var(--fondopagina);
+    
+}
+h1{
+    color:rgb(111,111,201);
+}
+h2,h3,h4,h5,h6{
+    color: var(--textotitulo);
+}
+p{
+    color:var(--textopromocional);
+}
+button{
+    background-color: var(--fondoboton);
+}
+
+
+.header {
+  margin: 4rem 2rem 4rem 2rem;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 0;
+  line-height: 45px;
+  height: 45px;
+}
+
+li {
+  display: inline;
+  font-size: 1.6rem;
+  padding: 2px;
+}
+
+.header > * {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 45px;
+}
+
+.logo {
+  width: 15%;
+}
+
+.navbar {
+  width: 70%;
+  text-align: center;
+  color: green;
+  font-family: sans-serif;
+  max-width: 70%;
+  
+  
+}
+
+
+.actions button{
+    border-radius: 0.5rem;
+    padding:1px;
+    font-size: 14px;
+    color:var(--blanco);
+    font-weight: 700;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    
+}
+.actions a{
+    color:#67b54b;
+}
+.actions{
+    color:var(--blanco);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 10px;
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.alineacion{
+    margin: 4rem;
+}
