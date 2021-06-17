@@ -1,5 +1,5 @@
 # Iniciar proyecto de git
-git init
+git init xd
 
 # Preparar archivos que se convertirán en commit
 git add .
