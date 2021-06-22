@@ -1,8 +1,8 @@
 :root{
     --textotitulo:#46484C;
     --textopromocional:#8b8b8bcc;
-    --textoboton:#eee;
-    --fondopagina:#eee;
+    --textoboton:rgb(237, 241, 220);
+    --fondopagina:rgb(64, 119, 170);
     --fondoboton:#025157;
     --blanco:#fff99;
 }
