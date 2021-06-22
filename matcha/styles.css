@@ -9,7 +9,12 @@
 
 body{
     background-color: var(--fondopagina);
+    line-height: 2rem;
+    margin: 0 auto;
     
+}
+img{
+  max-width: 100%;
 }
 h1{
     color:rgb(111,111,201);
@@ -23,7 +28,14 @@ p{
 button{
     background-color: var(--fondoboton);
 }
-
+.fixed-header{
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+}
 
 .header {
   margin: 4rem 2rem 4rem 2rem;
@@ -39,6 +51,10 @@ li {
   display: inline;
   font-size: 1.6rem;
   padding: 2px;
+}
+.video{
+  width: 50%;
+  height: 50%;
 }
 
 .header > * {
@@ -90,4 +106,52 @@ li {
 
 .alineacion{
     margin: 4rem;
+    margin-left: 500px;
+}
+
+
+
+
+.promo{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap:10px;
+  width: 70%;
+  margin: 0 auto;
+  
+
+}
+
+.promo__texto h3{
+ color:  #025157 ;
+ 
+}
+.promo__texto p{
+  color: #000;
+}
+
+.promo__texto{
+  font-size: 40px;
+  color:#343434;
+  width:50%;
+  height: 50%;
+  padding: 30px;
+}
+
+.promo__video{
+  
+  margin-top: 48px;
+ 
+}
+.promo__boton{
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 30px;
+  color:#fff;
+}
+
+.btn--secundario{
+  background-color: var(--blanco);
+  color:#000;
 }
