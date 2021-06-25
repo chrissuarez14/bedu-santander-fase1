@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    /* flex-direction: row-reverse;/*  cambia el orden los documetos horizontal */
+    /*flex-direction: column; los hace columna */
+  /* flex-wrap: wrap; *//*  mueve elementos a otro renglon si no caben los elementos lo empuja hacia abajo*/
+    /*flex-wrap: nowrap;*/ /*default no permite en multilinea*/
+}
+
+.container > .item{ /*selecciona hijos de primera generacion*/
+    background-color: gray;
+    width: 50%;
+    height: 50px;
+}
+
+.main{
+    display:flex;
+    width: 300px; /*si no lo pongo divide el basis y gwrop al 100% de la patalla*/
+}
+/*.main div:nth-child(1){*/ /*Solo a posicion*/
+    /*flex-grow: 2;*/ /*SI TIENE 2 ES MAS GRANDE QUE EL DE ABAJO*/
+/*}*/
+/*.main div:nth-child(4){*/ /*Solo a posicion*/
+    /*flex-grow: 1; *//*tOMAMOS EL VALOR DE CUANTO PUEDE CRECER, EL ESPACIO DISPONIBLE, EL ESPACIO RESTANTE LO DIVIDE ENTRE ELLOS CON SU VALOR*/
+/*}*/
+
+.item-1{flex-basis:100;flex-grow: 1;} /*de 500 pixeles se divide los 4 en 100 sobran 100  y estos se dividen segun su factor de crecimiento*/
+.item-2{flex-basis:100;flex-grow: 2;}
+.item-3{flex-basis:100;flex-grow: 1;}
+.item-4{flex-basis:100;flex-grow: 1;}

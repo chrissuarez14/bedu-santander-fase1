@@ -6,19 +6,51 @@
     --fondoboton:#025157;
     --blanco:#fff99;
 }
-
+html{
+  box-sizing: border-box;/*para el border, padding etc. no afecte el ancho de elementos*/
+  font-size: 62.5%; /* para que 1rem se igual a 10px*/
+}
+*,*:before,*:after{
+  box-sizing: inherit; 
+}
 body{
     background-color: var(--fondopagina);
-    line-height: 2rem;
+    line-height: 2;
+    font-size: 1.6rem;
     margin: 0 auto;
     
 }
-img{
+.contenedor{
+  max-width: 120rem;
+  width:90%; /*gracias a esto el texto no se va a las orillas por que si no lo tuviera ese texto se irira a las orillas y inluso los botones*/
+  width: min(90% ,120rem);/*aplica el valor de estos 2 que sea menor es lo mismo que lo de arriba */
+  margin: 0 auto; /*centrar contenido*/
+
+}
+
+
+
+img,
+video{
   max-width: 100%;
 }
 h1{
     color:rgb(111,111,201);
+    font-size: 4rem;
 }
+h2{
+  color:rgb(111,111,201);
+  font-size: 3.6rem;
+}
+h3{
+  color:rgb(111,111,201);
+  font-size: 2.9rem;
+}
+h4{
+  color:rgb(111,111,201);
+  font-size: 2.4rem;
+}
+
 h2,h3,h4,h5,h6{
     color: var(--textotitulo);
 }
@@ -28,23 +60,37 @@ p{
 button{
     background-color: var(--fondoboton);
 }
+
+li{
+  font-size: 1.7rem;
+}
+.header{
+ 
+  margin-bottom: 10rem;
+  
+ 
+}
 .fixed-header{
   position: fixed;
-  background-color: white;
+  background-color: #eed;
   top: 0;
   right: 0;
   left: 0;
+  margin-bottom: 2rem;
   
 }
-
+.main{
+  margin-top: 30rem;
+}
 .header {
-  margin: 4rem 2rem 4rem 2rem;
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 0;
-  line-height: 45px;
-  height: 45px;
+ 
+  margin: 1rem  0 0 1rem;
+  height: 10rem;
+}
+
+.contenido-princiapal{
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
 }
 
 li {
@@ -67,46 +113,56 @@ li {
 
 .logo {
   width: 15%;
+  height: 50%;
 }
 
 .navbar {
-  width: 70%;
+  width: 40%;
   text-align: center;
   color: green;
   font-family: sans-serif;
-  max-width: 70%;
-  
-  
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 ;
+  margin-left: 8rem;
+}
+.navbar ul li{
+  font-size: 2rem;
 }
 
 
 .actions button{
     border-radius: 0.5rem;
-    padding:1px;
-    font-size: 14px;
+    padding:1rem;
+    font-size: 1.6rem;
     color:var(--blanco);
     font-weight: 700;
     background-color: #67b54b;
-    padding: 12px 14px;
+    padding: 14px 14px;
     border: 0;
     
 }
 .actions a{
     color:#67b54b;
+    font-size: 2rem;
 }
 .actions{
     color:var(--blanco);
     font-weight: 700;
-    font-size: 14px;
-    margin: 0 10px;
-    width: 15%;
-    text-align: left;
-    font-size: 14px;
+    margin: 1rem 1rem;
+    width: 30%;
+    text-align: right;
+    font-size: 1rem;
+    height: 50%;
 }
 
-.alineacion{
-    margin: 4rem;
-    margin-left: 500px;
+.etiquetas{
+ 
+ text-align: center;
+ background-color: rgb(220, 224, 220);
+ border-radius: 4rem;
+ 
+
 }
 
 
@@ -114,36 +170,29 @@ li {
 
 .promo{
   display: flex;
-  align-content: center;
-  justify-content: center;
-  gap:10px;
-  width: 70%;
-  margin: 0 auto;
+
+  /*gap:2rem;*/
+  justify-content: space-between; 
+  /*align-items: center;*/
+  /* margin: 0 auto; */
+  align-self: auto;
   
 
 }
 
-.promo__texto h3{
- color:  #025157 ;
- 
-}
-.promo__texto p{
-  color: #000;
-}
 
 .promo__texto{
-  font-size: 40px;
-  color:#343434;
-  width:50%;
-  height: 50%;
-  padding: 30px;
-}
 
-.promo__video{
-  
-  margin-top: 48px;
- 
+  color:#343434;
+  flex-basis: calc(50% - 1rem);
+
 }
+.promo__video{
+  height: 60rem;
+  width: 60rem;
+  flex-basis: calc(50% - 1rem);
+} 
+
 .promo__boton{
   padding: 20px;
   font-size: 20px;
@@ -154,4 +203,355 @@ li {
 .btn--secundario{
   background-color: var(--blanco);
   color:#000;
+}
+
+
+
+.promo__texto h3{
+  color:  #025157 ;
+
+ }
+
+ .formulario{
+  margin: 0 auto; 
+  width: 99%;
+  padding: 5rem;
+  background-color:var(--blanco);
+  border-radius: 4rem;
+  box-shadow: 2px 2px 3rem rgba(101, 100, 104, 0.1) ;
+ }
+ .formulario h2{
+  text-align: center;
+ }
+
+
+ .campo{
+   display: flex;
+   padding: 2rem;
+   justify-content: center;
+   align-content: center;
+ }
+
+ .campo__label{
+  flex: 0 0 9rem; /*para que todos tengan un misma distacia*/
+  text-align: right;
+  padding-right: 2rem; /*es lo mismo con gap pero con mayor soporte*/
+  font-size: 2rem;
+  font-weight: 700;
+ }
+.campo__field{
+  flex:0.3;
+  border-radius: 2rem;
+}
+
+
+.boton{
+  padding: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 2rem;
+}
+
+.comerce{
+  background-color: #a1d683;
+  display: flex;
+  margin-left: 0;
+  gap: 1rem;
+  padding-left: 2rem;
+ 
+  
+
+}
+.comerce h2{
+  color: #025157;
+
+}
+
+.comerce__imagen{
+  width: 60rem;
+  height: 20rem;
+  margin-left: 5rem;
+
+  
+}
+.comerce__texto h2{
+  font-size: 7.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: 70%;
+  line-height: 1;
+  margin-left: 5rem;
+}
+.comerce__texto p{
+  font-size: 2.6rem;
+  color: #000;
+  width: 70%;
+  margin-left: 5rem;
+
+}
+
+.comerce__contenido{
+  width: 80%;
+  background-color: ivory;
+  padding: 0 ;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  height: 97%;
+
+}
+.imagen__arriba{
+  background-color: khaki;
+  width:15rem;
+  height:15rem;
+  border-radius:10rem;
+  margin-left: 10rem;
+  margin-top: -10rem;
+}
+.comerce__contenido__flex{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.carrito{
+  width: 15%;
+  height: 15%;
+  margin-left: 1rem;
+}
+.comerce__contenido__texto{
+  font-size: 2rem;
+  margin-right: 1rem;
+  width: 70%;
+  margin-top: -1rem;
+}
+.comerce__contenido__texto h2{
+  font-size: 3.5rem;
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+
+.comerce__contenido__texto h3{
+  font-size: 4rem;
+  padding: 2rem;
+  margin-top: -1rem;
+  font-weight: 400;
+  padding-left: 2rem;
+  line-height: 3;
+  margin-left: 2rem;
+}
+
+.comerce__contenido__imagen{
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.btn_comerce{
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+  color:lavenderblush;
+  margin-bottom: 3rem;
+}
+
+.margin{
+  margin-left: 0;
+  margin-left: 5rem;
+
+}
+
+/*Grid*/
+/*.features{
+  display:grid;
+  grid-template-columns: 30rem 30rem;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 500px 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.feature-art{
+  background-color: indigo;
+  margin:1rem;
+  width: 40%;
+  height: 50px;
+}*/
+
+
+/* .features{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr / repeat(2,1fr));
+}
+
+.feature-art{
+  background-color: indigo;
+  margin:1rem;
+  
+} */
+
+
+
+.features{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color:#025157 ;
+  align-self: center;
+  padding: 5% 10%;
+  
+}
+
+.feature-art{
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;  
+ 
+  
+  
+}
+
+.features-art__imagen{
+  width: 362px;
+  height: 238px;
+  order: 2;
+   margin-right: -15rem;
+}
+
+.feature-art__logo{
+  order: 1;
+  align-self:flex-start;
+  margin: top 1rem;
+  margin-left: 0rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+
+.feature-art-link{
+  text-decoration: none;
+  color: #67b54b;
+  font-size: 1.6rem;
+  order: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+.feature--blog{
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  
+}
+.feature-art-title{
+  margin: 0 ;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1;
+  width: 168px;
+
+}
+.feature-art-para{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  color: #7e7e7e;
+  line-height: 1.5;
+  width: 168px;
+  
+}
+
+
+/*Publicidad*/
+.curses-targets{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width:100%;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.curses_targets_info{
+  background-color: #eee;
+  border-radius: 1rem;
+  width: 90%;
+  border:1px solid rgba(101, 100, 104, 0.1);
+  margin-top: 5rem;
+  
+}
+
+.curses_target_info__images{
+  
+}
+.curses_target_info__images__logo{
+  width: 21px;
+  height: 18px;
+  margin: 2rem;
+  
+}
+.curses_target_info__images__img{
+ margin-top: -7rem;
+ width: 243px;
+ height: 350px;
+}
+.curses_target_info__body{
+  text-align: center;
+  /* margin: 5%; */
+  line-height: 1;
+}
+
+.curses_target_info__body__title{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#025157 ;
+}
+.curses_target_info__body__para{
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #46484C;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0rem 2rem;
+}
+
+.curses_target_info__body__a{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#b1e695;
+  text-decoration: none;
+  font-size: 16px;
+  /* margin-left: -7rem; */
+}
+
+
+/*inicio*/
+
+.curses-head{
+  text-align: center;
+}
+
+
+.curses-head__title{
+  font-size: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#025157;
+}
+
+.curses_head__para{
+  font-size: 1.8rem;
+  color:#46484C;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1;
+  
+}
+
+.curses-head__button{
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #eed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
 }

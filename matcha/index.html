@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-    
+
 <section class="fixed-header">
 
     <header class="header">
@@ -34,62 +34,102 @@
       </header>
 
 </section>
+<div class="contenedor main">
+    <h3>Nuestro Blog</h3>
+    <article class="entrada">
+        <div class="entrada_imagen">
+            <!--El orden depende a cual le quieras dar preferencia al cual primero intento usar-->
+            
+            <div >
+                <h4 class="no-margin">Tipos de granos de cafe</h4>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum erat at ipsum pharetra, vitae pretium nunc dignissim. Nulla viverra nisi in turpis dictum, eget mollis leo bibendum. Aliquam posuere sapien a augue cursus, et luctus risus tincidunt. P
+                ellentesque malesuada tincidunt eros sed fringilla. Aenean sit amet tellus accumsan, </p>
+                <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+            </div>
+        </div>
+        
+    </article>
 
+    <article class="entrada">
+        <div  class="entrada_imagen">
+            <picture>
+                <source loading="lazy srcset="img/blog2.webp" type="image"> 
+                <img  loading="lazy"  src="img/blog2.jpg" alt="">
+            </picture>
+            
+            <div class="entrada__contenido">
+                <h4 class="no-margin">3 Deliciosas  recetas de cafe</h4>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum erat at ipsum pharetra, vitae pretium nunc dignissim. Nulla viverra nisi in turpis dictum, eget mollis leo bibendum. Aliquam posuere sapien a augue cursus, et luctus risus tincidunt. P
+                ellentesque malesuada tincidunt eros sed fringilla. Aenean sit amet tellus accumsan, </p>
+                <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+            </div>
+        </div>
+        
+    </article>
 
-   <div class="alineacion"> 
-    <h1>Mi primer etiqueta</h1>
-    <h2>Mi primer etiqueta</h2>
-    <h3>Mi primer etiqueta</h3>
-    <h4>Mi primer etiqueta</h4>
-    <h5>Mi primer etiqueta</h5>
-    <h6>Mi primer etiqueta</h6>
+    <article class="entrada">
+        <div class="entrada_imagen">
+            <picture>
+                <source  loading="lazy" srcset="img/blog3.webp" type="image"> 
+                <img  loading="lazy"  src="img/blog3.jpg" alt="">
+            </picture>
+         
+            <div class="entrada__contenido">
+                <h4 class="no-margin">Beneficios del cafe</h4>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum erat at ipsum pharetra, vitae pretium nunc dignissim. Nulla viverra nisi in turpis dictum, eget mollis leo bibendum. Aliquam posuere sapien a augue cursus, et luctus risus tincidunt. P
+                ellentesque malesuada tincidunt eros sed fringilla. Aenean sit amet tellus accumsan, </p>
+                <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+            </div>
+        </div>
+        
+    </article>
 
-    <p>Primer parrafo chido xd</p>
+</div>
+
+   
+    
     
 
-    <!--Segundo reto-->
+<form  class="formulario">
+<h2>Formulario de registro</h2>
+    <div class="campo">
+        <label class="campo__label" >Nombre</label>
+        <input class="campo__field" type="text"><br>
+    </div>
 
-    <p>Este es un reto <b>promocional</b></p>
-
-    <!--Entradas de texto
-<form action="#">
-
+    <div class="campo">
+    <label class="campo__label" for="">Apellido</label>
+    <input class="campo__field"type="text"><br>
+    </div>
     
-    <input type="email">
-    <button>Enviar &rarr; </button>
-
-</form>-->
-
-
-
-<!--Reto 3-->
-   </div >   
+    <div class="campo">
+        <label class="campo__label" for=""> Edad</label>
+        <input class="campo__field"type="number" min=18 max=35><br>
+    </div>
+    
+    <div class="campo">
+        <label class="campo__label" for="">Email</label>
+        <input class="campo__field"type="email"><br>
+    </div>
+    <div class="campo">
+        <label class="campo__label" for="">Password</label>
+        <input class="campo__field"type="password">
+    </div>
+    <div class="campo">
+        <button class="boton ">Enviar</button>
+    </div>
     
     
+    
 
-<form action="#" class="form">
 
-    <label for="">Nombre</label>
-        <input type="text"><br>
-    <label for="">Apellido</label>
-        <input type="text"><br>
-    <label for=""> Edad</label>
-        <input type="number" min=18 max=35><br>
-    <label for="">Email</label>
-        <input type="email"><br>
-    <label for="">Password</label>
-        <input type="password">
-    <button>Enviar</button>
-  
 </form>
 
-    
-    <br/>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaqts3Pq7nu_DLe9OB1LjfIZzE_7-a0rX9WxRINv6ZYgQdUSyBcA5zw2N5N3i5um1DLLRcYLo&usqp=CAc" alt="imagenen chida">
+<br/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaqts3Pq7nu_DLe9OB1LjfIZzE_7-a0rX9WxRINv6ZYgQdUSyBcA5zw2N5N3i5um1DLLRcYLo&usqp=CAc" alt="imagenen chida"/>
 
 
-
-    <section class="promo">
+    <section class="contenedor ">
         <!-- Etiqueta de video -->
         <!-- <video src="">
             <source
@@ -103,28 +143,204 @@
             src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4 "></video>>
             
         </video> -->
-        <article class="promo__video">
-        <video class="video" controls  
-        src="https://www.youtube.com/watch?v=roEVg8eJbbI" height="200px" width="500px">
-        </video>
+        <div class="promo">
+            <article class="promo__video">
+       
+                <video controls 
+                       poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+                    <source type="video/mp4"src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" > 
+                </video>
+                
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="See how it works" />
         
-        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="">
-        </article>
+                <!-- <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt=""> -->
+                </article>
+        
+                <article class="promo__texto">
+                    <h3>Publish to your blog in minutes, not hours.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies nisi a feugiat egestas. Maecenas iaculis augue vitae neque accumsan lacinia.</p>
+                    <div class="promo__boton ">
+                        <button  class="promo__boton btn--primario">
+                            Start free trial
+                        </button>
+                        <button  class="promo__boton btn--secundario">
+                            Start free trial
+                        </button>
+                    </div>
+                </article>
+        </div>
 
-        <article class="promo__texto">
-            <h3>Publish to your blog in minutes, not hours.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies nisi a feugiat egestas. Maecenas iaculis augue vitae neque accumsan lacinia.</p>
-            <div class="promo__boton ">
-                <button  class="promo__boton btn--primario">
-                    Start free trial
-                </button>
-                <button  class="promo__boton btn--secundario">
-                    Start free trial
-                </button>
-            </div>
-        </article>
+
+
+        
+      
       
     </section>
+    <div class="centrar">
+        <div class="comerce">
+
+            <article class="comerce__texto">
+                <div >
+                    <h2>Growing ecomerce Brands rely on Matcha</h2>
+                    <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.</p>
+                    <button class="btn_comerce margin">Who Uses Matcha?</button>
+                   
+                </div> 
+                <img  class="comerce__imagen" src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="">
+            </article>
+            <article>
+                <div class="comerce__contenido">
+                    
+                    <img class="comerce__contenido__imagen" src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="imagen inicio">
+                    <img  class="imagen__arriba"src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png" alt="">
+    
+                    <div class=" comerce__contenido__texto">
+                        <h2>Sea to submit</h2>
+                        <h3>
+                            
+                            Early-Stage CPG Brand Increases Lead Conversion 20x,
+                            Ecommerce Revenue 20%
+                        </h3>
+                    </div>
+                    <div class="comerce__contenido__flex">
+                        <img  class="carrito" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png" alt="carrito">
+                        <p class="comerce__contenido__texto">22% of monthly revenue influenced by content</p>
+                    </div>
+                    <div>
+                        <button class="btn_comerce">
+                            See Case Study
+                        </button>
+                    </div>
+                </div>
+                
+            </article>
+    
+        </div>
+    </div>
+    <!--Terminar el postwork este antes del lunes ambas pantallas postwork3 si ya subi este ya no mandarlo link de repo reto 4 y postwork 4-->
+   <section class="features">
+       <article class="feature-art">
+           <img class="features-art__imagen" src=" https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png" alt="">
+           <div class="feature--blog">
+            <img class="feature-art__logo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png" alt="">
+            <h3 class="feature-art-title">Fill your Blog with egaging articles</h3>
+            <p class="feature-art-para">Publish to your blog in less time than it takes to drink your morning coffee.</p>
+            <a class= "feature-art-link" href="#">Publish instantly </a>
+           </div>
+        </article>
+
+       <article class="feature-art">
+        <img class="features-art__imagen" src=" https://getmatcha.com/wp-content/themes/getmatcha/img/image_site_traffic.png" alt="">
+        <div class="feature--blog">
+         <img class="feature-art__logo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png" alt="">
+         <h3 class="feature-art-title">Attract and engage more website visitors.</h3>
+         <p class="feature-art-para">Enhance your email, social media channels, and paid ads with content from Matcha..</p>
+         <a class= "feature-art-link" href="#">Get more site traffic →</a>
+        </div>
+       </article>
+
+       <article class="feature-art">
+        <img class="features-art__imagen" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_capture.png" alt="">
+        <div class="feature--blog">
+         <img class="feature-art__logo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png" alt="">
+         <h3 class="feature-art-title">Capture more emails with locked content.</h3>
+         <p class="feature-art-para">Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
+         <a class= "feature-art-link" href="#">Grow your email list faster →</a>
+        </div>
+       </article>
+
+
+       <article class="feature-art">
+        <img class="features-art__imagen" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png" alt="">
+        <div class="feature--blog">
+         <img class="feature-art__logo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="">
+         <h3 class="feature-art-title">Optimize your blog’s performance.</h3>
+         <p class="feature-art-para">See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
+         <a class= "feature-art-link" href="#">See content’s ROI →</a>
+        </div>
+       </article>
+
+   </section>
+
+   <section class=" contenedor curses">
+
+       <div class="curses-head">
+           <h2 class="curses-head__title">How does Matcha wok?</h2>
+           <p class="curses-head__para">Your blog can be so much more than window dressing. Use Matcha’s simple formula to transform your blog into an ecommerce growth engine.</p>
+            <button class="curses-head__button">Explore the Platform</button>
+        </div>
+
+
+       <div class="curses-targets">
+           <div class="curses_targets_info">
+               <div class="curses_target_info__images">
+                    <img  class="curses_target_info__images__logo"src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="">
+                    <img class="curses_target_info__images__img" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="">
+                   
+               </div>
+
+               <div class="curses_target_info__body">
+                    <h3 class="curses_target_info__body__title">Publish</h3>
+                    <p class="curses_target_info__body__para">
+                        Effortlessly fill your blog with content that shoppers want to read.
+                    </p>
+                    <a class="curses_target_info__body__a" href="#">Publish instantly →</a>
+               </div>
+           </div>
+           <div class="curses_targets_info">
+            <div class="curses_target_info__images">
+                 <img  class="curses_target_info__images__logo"src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_channels.png" alt="">
+                 <img class="curses_target_info__images__img" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="">
+                
+            </div>
+
+            <div class="curses_target_info__body">
+                 <h3 class="curses_target_info__body__title">Promote</h3>
+                 <p class="curses_target_info__body__para">
+                    Use articles in email, social, and content ads to attract more site visitors.
+                 </p>
+                 <a class="curses_target_info__body__a" href="#">Drrive morer site visitors →</a>
+            </div>
+        </div>
+        <div class="curses_targets_info">
+            <div class="curses_target_info__images">
+                 <img  class="curses_target_info__images__logo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_funnel.png" alt="">
+                 <img class="curses_target_info__images__img" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="">
+                
+            </div>
+
+            <div class="curses_target_info__body">
+                 <h3 class="curses_target_info__body__title">Capture</h3>
+                 <p class="curses_target_info__body__para">
+                    Turn readers into email subscribers and subscribers into customers.
+                 </p>
+                 <a class="curses_target_info__body__a" href="#">Grow your email list →</a>
+            </div>
+        </div>
+        <div class="curses_targets_info">
+            <div class="curses_target_info__images">
+                 <img  class="curses_target_info__images__logo"src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="">
+                 <img class="curses_target_info__images__img" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="">
+                
+            </div>
+
+            <div class="curses_target_info__body">
+                 <h3 class="curses_target_info__body__title">Measure</h3>
+                 <p class="curses_target_info__body__para">
+                    See what’s working and what’s not to easily optimize for more traffic, email subscribers, and sales.
+                 </p>
+                 <a class="curses_target_info__body__a" href="#">Track performance →</a>
+            </div>
+        </div>
+           
+
+          
+
+         
+
+
+        </div>
+   </section>
 
 </body>
 
