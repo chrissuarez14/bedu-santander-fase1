@@ -18,6 +18,7 @@ body{
     line-height: 2;
     font-size: 1.6rem;
     margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 .contenedor{
@@ -31,13 +32,15 @@ body{
 
 
 img,
-video{
+/* video */{
   max-width: 100%;
 }
-h1{
+ h1{
+    
     color:rgb(111,111,201);
-    font-size: 4rem;
-}
+    font-size: 2rem;
+} 
+/*
 h2{
   color:rgb(111,111,201);
   font-size: 3.6rem;
@@ -53,13 +56,13 @@ h4{
 
 h2,h3,h4,h5,h6{
     color: var(--textotitulo);
-}
+}*/
 p{
     color:var(--textopromocional);
 }
-button{
+/* button{
     background-color: var(--fondoboton);
-}
+}  comentar mientras tenga boostrap es para el boton de del carousel*/
 
 li{
   font-size: 1.7rem;
@@ -67,8 +70,6 @@ li{
 .header{
 
   margin-bottom: 10rem;
-
-
 }
 .fixed-header{
   position: fixed;
@@ -105,8 +106,7 @@ li {
   display: inline-block;
   font-size: 16px;
   vertical-align: middle;
-  height: 100%;
-  line-height: 45px;
+
 }
 
 .logo {
@@ -115,12 +115,12 @@ li {
 }
 
 .navbar {
-  width: 40%;
-  color: green;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-left: 8rem;
+  /* width: 70%; */
+  /* color: green; */
+  /* font-size: 2rem; */
+  /* font-weight: 700; */ 
+  /* margin-left: 8rem; */
+  /* margin: 0 0 0 0;  este se comento para que se estirara todo */
 }
 .navbar ul li{
   font-size: 2rem;
@@ -166,22 +166,14 @@ li {
 
 .promo{
   display: flex;
-
-  /*gap:2rem;*/
   justify-content: space-between;
-  /*align-items: center;*/
-  /* margin: 0 auto; */
   align-self: auto;
-
-
 }
 
 
 .promo__texto{
-
   color:#343434;
   flex-basis: calc(50% - 1rem);
-
 }
 .promo__video{
   height: 60rem;
@@ -210,14 +202,25 @@ li {
 
  .formulario{
   margin: 0 auto;
-  width: 99%;
+  width: 50%;
   padding: 5rem;
-  background-color:var(--blanco);
+  background-color:var(--fondopagina);
   border-radius: 4rem;
   box-shadow: 2px 2px 3rem rgba(101, 100, 104, 0.1) ;
  }
+
+ .formulario-gradiente{
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(223,107,53,1) 100%);
+   /* background-image:linear-gradient(90deg, rgba(161,161,241,1) 0%, rgba(247,255,245,0.38448882971157217) 43%, rgba(16,236,178,0.9559174011401436) 100%); */
+   border-radius: 0;
+   padding: 4rem;
+
+ }
  .formulario h2{
   text-align: center;
+  margin:0;
+  padding: 0;
  }
 
  .campo{
@@ -229,7 +232,7 @@ li {
 
  .campo__label{
   flex: 0 0 9rem; /*para que todos tengan un misma distacia*/
-  text-align: right;
+  text-align: left;
   padding-right: 2rem; /*es lo mismo con gap pero con mayor soporte*/
   font-size: 2rem;
   font-weight: 700;
@@ -237,14 +240,18 @@ li {
 .campo__field{
   flex:0.3;
   border-radius: 2rem;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
 }
 
 
 .boton{
   padding: 3rem;
   font-size: 3rem;
-  color: #fff;
+  color:burlywood;
   border-radius: 2rem;
+  background-color:#df6b35 ;
 }
 
 .comerce{
@@ -551,3 +558,114 @@ li {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
 }
+
+/*responsive 
+//REGLAS
+
+//En mas de 4 segundos no muestra algo el usuario se va , tiene que tardar menos 
+//RESPONSIVA 
+//CARGUE PRONTO */
+/*
+@media(min-width: 468px) {
+  .curses-targets{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:100%;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+}*/
+
+
+/** Dispositivos moviles en vista viewport (vertical)*/ /*checar parte para modiciar y crear mq y anotar en el cel*/
+@media(max-width: 575px) {
+   /* .navbar,
+  .actions{
+    display: none;
+  }   */
+
+  h1{
+    font-size: 5rem;
+  }
+  li {
+    display: block;
+    font-size: 1rem;
+    padding: 2px;
+  }
+  .main{
+    margin-top: 1rem;
+
+  }
+  .banner > img{
+    width:100%;
+  }
+  .formulario{
+    margin: 2rem ;
+    width: 100%;
+    padding: 5rem;
+    margin: 2rem;
+    border-radius: 2rem;
+  
+   }
+   .campo{
+     margin: 2rem;
+    
+   }
+   .formulario-gradiente{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(223,107,53,1) 100%);
+    border-radius: 0;
+    padding: 2.5rem;
+    width: 100%;
+    
+  
+   }
+   .promo{
+     flex-direction: column;
+     max-width: 90%;
+   }
+   video{
+     width: 100%;
+   }
+   
+   .publish{
+     margin-top: 1rem;
+   }
+   .publish > h3{
+
+   }
+   .features{
+     display: block;
+     padding: 1rem;
+     margin-left: 10rem;
+     max-width: 90%;
+   }
+   .curses-targets{
+    display: block;
+    margin-left: 4rem;
+    margin-top: 10rem;
+   
+  }
+  .curses_head{
+    margin-bottom: 25em;
+  }
+}
+
+/*dispositivos pequenos en vista landscape(horizontal)*/
+ @media(min-width: 576px )and (max-width: 767px) {
+    
+} 
+
+/*dispositivos medianos tablets*/
+@media(min-width: 768px) and (max-width:991px) {
+    
+} 
+/*dispostivos grandes (desktop) */
+ @media(min-width: 992px) and (max-width:1199) {
+    
+} 
+
+/** dispositivos extra grandes(monitores grandes,tvs)*/
+ @media(min-width: 1200px) {
+    
+} 
