@@ -1,0 +1,75 @@
+/** main.scss */
+@use 'global' as *;
+
+.blog {
+  background-color: $white;
+  max-width: unset; // cresca al 100% toma todo el espacio disponible en grid de flex y grid si cambia del 100%
+  padding: 5% 10%;
+
+  .title {
+    @extend %base-title;
+  }
+
+  .process-list {
+    margin-top: 40px;
+    margin-bottom: 36px;
+
+    .process {
+      margin-bottom: 25px;
+
+      & > div {
+        & > h3 {
+          color: $dark-green-title;
+          margin-bottom: 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        & > p {
+          color: $dark-green-text;
+          margin: 0;
+        }
+      }
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    margin-bottom: 15px;
+    background-color: $dark-green-text;
+  }
+
+  .card-title{
+      color: $dark-green-title;
+      font-size: 20px;
+  }
+  .metadata{
+      color: $light-green;
+  }
+  .read-time{
+      color:$light-gray;
+  }
+  .card-text{
+      color:$dark-green-text;
+  }
+  .card{
+      width: 300px;
+      height: 300px;
+  }
+}
+
+

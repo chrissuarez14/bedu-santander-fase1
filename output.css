@@ -1,0 +1,70 @@
+/** _global.scss */
+/** fuentes */
+/** placeholders */
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+/** _global.scss */
+/** colores */
+/** main.scss */
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+  background-color: #135359;
+}
+.blog .card-title {
+  color: #025157;
+  font-size: 20px;
+}
+.blog .metadata {
+  color: #67b54b;
+}
+.blog .read-time {
+  color: #979797;
+}
+.blog .card-text {
+  color: #135359;
+}
+.blog .card {
+  width: 300px;
+  height: 300px;
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -16,7 +16,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" type="text/css">
-    
+    <link rel="stylesheet" href="output.css">    
 
     <!-- Importar -->
 </head>
@@ -47,7 +47,7 @@
       </header> -->
 
 <!-- </section> sin boostrap-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">
       <img
         src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
@@ -72,7 +72,7 @@
           <a class="nav-link" href="#">Platform</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="./pricing.html">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Customers</a>
@@ -90,6 +90,7 @@
       </form>
     </div>
   </nav> 
+<img src="01.jpg" class="rounded-circle" alt="..." width="300px" height="200px">
 
 <!-- Empieza aqui carousel -->
 
@@ -171,11 +172,11 @@
 
 </section>
 
-   
+
     
     
 <article class="formulario-gradiente">
-    <form  class="formulario">
+    <!-- <form  class="formulario">
         <h2>Formulario de registro</h2>
             <div class="campo">
                 <label class="campo__label" >Nombre</label>
@@ -203,16 +204,108 @@
             <div class="campo">
                 <button class="boton ">Enviar</button>
             </div>
+
+        </form>
             
+ -->
+
+
+
+
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Apellido</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido De Usuario">
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Selecciona la cantidad de sesiones</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Selecciona la cantidad de mascotas</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Escribe un mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
         </article>
 
-    
+
+        <div class="card" style="width: 18rem;">
+            <img src="01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+           
+        </div>
+        <div class="card">
+            <div class="card-header">
+              Como te sientes?
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Describe como te sentiste hoy!</h5>
+              <p class="card-text">Cuentame como te fue hoy amig@</p>
+              <a href="#" class="btn btn-primary">Enviar</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Christian
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Estado:Feliz</h5>
+              <p class="card-text">Hoy fue un dia....<p>
+              <a href="#" class="btn btn-primary">Enviar</a>
+            </div>
+          </div>
     
 
 
-</form>
+
+
 
 <br/>
+
+
+
+
+
+
+
+
+
+
 
 
     <section class="contenedor ">
@@ -428,7 +521,95 @@
         </div>
    </section>
 
+   <section class="container blog">
+    <div class="row">
+      <div class="col">
+        <h2 class="title">Learn how to grow your ecommerce business.</h2>
+        <article class="process-list">
+          <div class="process">
+            <div class="process-icon">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/build-20-454867.png "alt="Build icon" />
+            </div>
+            <div class="process-description">
+              <h3>Build</h3>
+              <p>and scale your ecommerce store</p>
+            </div>
+          </div>
+          <div class="process">
+            <div class="process-icon">
+              <img src="https://catwatchful.com/main/wp-content/uploads/2014/09/rocket-icon.png" alt="Attract icon" />
+            </div>
+            <div class="process-description">
+              <h3>Attract</h3>
+              <p>your target audience and grow site traffic</p>
+            </div>
+          </div>
+          <div class="process">
+            <div class="process-icon">
+              <img src="https://icon-library.com/images/icon-convert/icon-convert-2.jpg" alt="Convert icon" />
+            </div>
+            <div class="process-description">
+              <h3>Convert</h3>
+              <p>readers to subscribers and customers</p>
+            </div>
+          </div>
+        </article>
+        <button>Read the blog</button>
+      </div>
 
+
+      
+      <div class="col">
+        <section class="container blog">
+          <div class="row">
+            <div class="col">
+              <!-- Aquí va la columna de descripción -->
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+                  class="card-img-top"
+                  alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+                  </h5>
+                  <p class="metadata">
+                    <strong class="category">Performance Blogging </strong>
+                    <strong class="read-time">• 21 mins read</strong>
+                  </p>
+                  <p class="card-text">
+                    Table of ContentsWhy Ecommerce Businesses Need a Blog in
+                    2020Document Your Ecommerce Blog StrategyPublication: How to Create
+                    High-Performing Blog ContentDistribution:...
+                    <span class="read-more">+ <a>Read More</a></span>
+                  </p>
+                  <div class="author">
+                    <img
+                      src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+                      alt="Shauna Ward"
+                    />
+                    <p>Shauna Ward</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </section>
+      </div>
+      <div class="col">
+
+
+      </div>
+    </div>
+
+    
+  </section>
+ <!-- Se recomienda que el script de boostrap vaya al final antes del cierre de body -->
+   
 <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -447,6 +628,8 @@
    
 <!-- Este escript da funcionalidad al menur al haccer chico ,  -->
 <!-- Agregar el jquery usa boostrap para dar funcionalidad a la pagina -->
+
+
 </body>
 
 </html>
