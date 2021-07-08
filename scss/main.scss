@@ -53,23 +53,110 @@
     background-color: $dark-green-text;
   }
 
+
+  
+
   .card-title{
       color: $dark-green-title;
       font-size: 20px;
   }
+  
   .metadata{
       color: $light-green;
   }
+
   .read-time{
       color:$light-gray;
   }
+
   .card-text{
       color:$dark-green-text;
   }
+
   .card{
-      width: 300px;
-      height: 300px;
+      width: 30rem;
+      height: 70rem;
+      border-radius: 2rem;
+      box-shadow: 0 1px 10px gray; /*horizontal vertical desenfoque color*/
+      text-align: left;
+  }
+  .col{
+    width: 90%;
+  
+  }
+  .card-img-top{
+    width: 100%;
+    height: 19.8rem;
+
+  }
+  
+  .person-icon{
+    width: 20%;
+    height: 20%;
+  }
+  .bajar{
+    margin-top: 1.7rem;
+  }
+
+  .card-body{
+    height: 40rem;
   }
 }
 
 
+
+
+button {
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+  background-color: $dark-green-text;
+}
+.flex-card{
+  display: flex;
+}
+.d-block {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.rounded-circle{
+  margin-top: 10rem;
+  border-radius: 4rem;
+  margin-left: 5rem;
+}
+
+.margin{
+  margin: 4rem;
+  border-radius: 2rem;
+}
+
+.feeling{
+  width: 40%;
+  height: 50%;
+  margin-left: 80rem;
+  box-shadow: 0px 0 10px black;
+  
+}
+
+
+
+
+@media(max-width: 575px){
+
+
+  .blog{
+    .row{
+      display: grid;
+    }
+    .col{
+      float: left;
+      width: 90%;
+      
+    }
+  }
+}
