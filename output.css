@@ -130,9 +130,10 @@ button {
   .blog .row {
     display: grid;
   }
-  .blog .col {
+  .blog .row .col {
     float: left;
     width: 90%;
+    padding: 5% 0%;
   }
 }
 
